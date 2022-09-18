@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="text">
+        <button class="button">
+        <h2>
+            First level: Напишите любой bash-скрипт, содержащий цикл и опишите построчно его работу.
+        </h2>
+    </button>
+        <ol>
+            <li>
+                Прописываем следующую команду: #!/bin/bash; <br>
+                (данная строка дает системе понять что скрипт нужно запускать при помощи bash, который находится в папке /bin)
+            </li>
+            <li>
+                        Далее прописываем следующие команды: <br>
+                for run in {1..10} - <br>
+                        do <br>
+                            echo $run <br>
+                            sleep 1 <br>
+                done 
+            </li>
+        </ol>
+        <p>
+            В каждой итерации цикла в переменную run команда echo будет выводить следующее значение из фигурных скобок ”списка”. В первом цикле выведет первое значение, во втором — второе, и тд. пока цикл не дойдёт до последнего указанного нами значения.
+        </p>
+    </div>
+</body>
+</html>
